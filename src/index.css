@@ -8,30 +8,90 @@
   --foreground: 222 30% 16%;
   --card: 0 0% 100%;
   --card-foreground: 222 30% 16%;
-  --primary: 152 100% 33%;          /* #00A859 */
+  --primary: 152 100% 33%; /* #00A859 */
   --primary-foreground: 150 20% 99%;
   --primary-glow: 150 70% 45%;
-  --secondary: 211 100% 50%;        /* #007BFF */
+  --secondary: 211 100% 50%; /* #007BFF */
   --secondary-foreground: 0 0% 100%;
-  --accent: 45 95% 60%;             /* warm yellow */
+  --accent: 45 95% 60%; /* warm yellow */
   --accent-foreground: 30 50% 20%;
   --muted: 220 15% 96%;
   --muted-foreground: 220 10% 45%;
   --border: 220 13% 91%;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Open Sans", system-ui, sans-serif;
   color: hsl(var(--foreground));
-  background: hsl(var(--background));
+  background:
+    radial-gradient(circle at top, rgba(0, 168, 89, 0.08), transparent 28%),
+    hsl(var(--background));
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5 { font-family: "Poppins", system-ui, sans-serif; }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", system-ui, sans-serif;
+}
 
-.transition-smooth { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-.hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.hover-lift:hover { transform: translateY(-4px); box-shadow: 0 10px 30px -10px hsl(var(--primary) / 0.3); }
-.text-balance { text-wrap: balance; }
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hover-lift {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+}
+
+.bg-gradient-hero {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 48, 32, 0.22),
+    rgba(2, 48, 32, 0.72)
+  );
+}
+
+.shadow-soft {
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+}
+
+.shadow-glow {
+  box-shadow: 0 24px 80px rgba(0, 168, 89, 0.14);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 20s linear infinite;
+}
