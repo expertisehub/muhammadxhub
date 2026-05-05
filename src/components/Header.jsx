@@ -41,7 +41,7 @@ export default function Header({ startDonation }) {
           <img
             src={logo}
             alt="Expertise Hub Foundation logo"
-            className="h-10 w-10 object-contain"
+            className="h-10 w-10 object-contain rounded-full"
             width={40}
             height={40}
           />
