@@ -7,19 +7,21 @@ import DonationPage from "./components/sections/DonationPage.jsx";
 import VolunteerPage from "./components/sections/VolunteerPage.jsx";
 import PartnerPage from "./components/sections/PartnerPage.jsx";
 import ProgramModal from "./components/sections/ProgramModal.jsx";
-import hero from "./assets/hero-youth.jpg";
-import aboutImg from "./assets/about-team.jpg";
-import digital from "./assets/program-digital.jpg";
-import ideation from "./assets/program-ideation.jpg";
-import mentorship from "./assets/program-mentorship.jpg";
-import community from "./assets/program-community.jpg";
-import capacity from "./assets/program-capacity.jpg";
-import t1 from "./assets/testimonial-1.jpg";
-import t2 from "./assets/testimonial-2.jpg";
-import t3 from "./assets/testimonial-3.jpg";
-import b1 from "./assets/blog-1.jpg";
-import b2 from "./assets/blog-2.jpg";
-import b3 from "./assets/blog-3.jpg";
+import aboutImg from "./assets/DSC_9894.jpg";
+import digital from "./assets/DSC_0093.jpg";
+import ideation from "./assets/DSC_0146.jpg";
+import mentorship from "./assets/DSC_0594.jpg";
+import community from "./assets/DSC_0673.jpg";
+import capacity from "./assets/DSC_0930.jpg";
+import t1 from "./assets/DSC_0963.jpg";
+import t2 from "./assets/DSC_8611.jpg";
+import t3 from "./assets/DSC_8614.jpg";
+import b1 from "./assets/DSC_8632.jpg";
+import b2 from "./assets/DSC_9598.jpg";
+import b3 from "./assets/DSC_9609.jpg";
+
+const imageModules = import.meta.glob("./assets/*.{jpg,jpeg}", { eager: true });
+const allImages = Object.values(imageModules).map((module) => module.default);
 
 const programs = [
   {
@@ -138,7 +140,7 @@ export default function App() {
   const [fundSent, setFundSent] = useState(false);
   const [dollarSent, setDollarSent] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
-  const heroImages = [hero, t1, t2, t3, b1];
+  const heroImages = allImages;
   const [heroIndex, setHeroIndex] = useState(0);
 
   useEffect(() => {

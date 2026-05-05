@@ -9,7 +9,7 @@ export default function HeroSection({ heroImage, startDonation }) {
       <img
         src={heroImage}
         alt="Northern Nigerian youth learning digital skills together"
-        className="absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-out"
+        className="absolute inset-0 h-full w-full object-contain transition-opacity duration-1000 ease-out"
       />
       <div className="absolute inset-0 bg-gradient-hero" />
       <div className="relative z-10 mx-auto max-w-5xl px-4 md:px-6 py-20 text-center text-primary-foreground animate-fade-up">
