@@ -1,3 +1,7 @@
-"build": {
-  "outputs": [".next/**", "!.next/cache/**"]
+{
+  "pipeline": {
+    "build": {
+      "outputs": [".next/**", "!.next/cache/**"]
+    }
+  }
 }
