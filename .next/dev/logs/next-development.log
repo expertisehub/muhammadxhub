@@ -1,0 +1,19 @@
+{"timestamp":"00:00:01.934","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:18.994","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:56.622","source":"Server","level":"LOG","message":"✓ Compiled in 260ms"}
+{"timestamp":"00:01:09.343","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:01:20.158","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:05:45.822","source":"Server","level":"LOG","message":"✓ Compiled in 214ms"}
+{"timestamp":"00:05:48.124","source":"Server","level":"LOG","message":"✓ Compiled in 355ms"}
+{"timestamp":"00:05:48.982","source":"Server","level":"LOG","message":"✓ Compiled in 233ms"}
+{"timestamp":"00:05:48.985","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
+{"timestamp":"00:05:48.986","source":"Browser","level":"ERROR","message":"uncaughtError: ReferenceError: s is not defined"}
+{"timestamp":"00:05:50.253","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:06:29.460","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:06:59.489","source":"Server","level":"LOG","message":"✓ Compiled in 313ms"}
+{"timestamp":"00:07:10.152","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:07:52.517","source":"Server","level":"LOG","message":"✓ Compiled in 164ms"}
+{"timestamp":"00:08:10.022","source":"Server","level":"LOG","message":"✓ Compiled in 157ms"}
+{"timestamp":"00:09:02.639","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"00:09:02.647","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"00:09:02.649","source":"Browser","level":"WARN","message":"\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\u001b[39m"}

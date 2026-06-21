@@ -1,6 +1,8 @@
+"use client";
+
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/logo.jpeg";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -12,7 +14,8 @@ const links = [
   { href: "#contact", label: "Contact" },
 ];
 
-export default function Header({ startDonation }) {
+export default function Header() {
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -39,7 +42,7 @@ export default function Header({ startDonation }) {
           className="flex items-center gap-2 hover:opacity-80 transition-smooth"
         >
           <img
-            src={logo}
+            src="/logo.jpeg"
             alt="Expertise Hub Foundation logo"
             className="h-10 w-10 object-contain rounded-full"
             width={40}
@@ -66,7 +69,7 @@ export default function Header({ startDonation }) {
             </a>
           ))}
           <button
-            onClick={startDonation}
+            onClick={() => router.push("/donate")}
             className="ml-3 inline-flex items-center justify-center rounded-full bg-gradient-cta px-5 py-2 text-sm font-semibold text-primary-foreground shadow-soft hover:shadow-glow transition-smooth"
           >
             Donate
@@ -100,7 +103,7 @@ export default function Header({ startDonation }) {
               type="button"
               onClick={() => {
                 close();
-                startDonation();
+                router.push("/donate");
               }}
               className="mt-2 inline-flex items-center justify-center rounded-full bg-gradient-cta px-5 py-3 text-base font-semibold text-primary-foreground shadow-soft"
             >

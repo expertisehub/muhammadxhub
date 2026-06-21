@@ -1,0 +1,8 @@
+{
+  "chat.tools.terminal.autoApprove": {
+    "/^cd /home/amir/Expertise/xhub-spa && bash -lc \"curl -i -X POST http://127\\.0\\.0\\.1:3000/api/send-email -H 'Content-Type: application/json' --data-binary @- <<'JSON'\n\\{\\\\\"type\\\\\":\\\\\"test\\\\\",\\\\\"name\\\\\":\\\\\"Local Test\\\\\",\\\\\"email\\\\\":\\\\\"test@example\\.com\\\\\",\\\\\"subject\\\\\":\\\\\"API test\\\\\",\\\\\"message\\\\\":\\\\\"This is a test message from the CLI\\.\\\\\"\\}\nJSON\"$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  }
+}

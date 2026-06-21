@@ -6,7 +6,6 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
-import logo from "../assets/logo.jpeg";
 
 export default function Footer() {
   return (
@@ -16,9 +15,9 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2">
               <img
-                src={logo}
+                src="/logo.jpeg"
                 alt="Expertise Hub Foundation logo"
-                className="h-10 w-10 object-contain"
+                className="h-10 w-10 object-contain rounded-full"
               />
               <div className="flex flex-col leading-tight">
                 <span className="font-display font-bold text-foreground text-sm">

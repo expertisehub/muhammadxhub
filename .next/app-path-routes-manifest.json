@@ -1,0 +1,9 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/send-email/route": "/api/send-email",
+  "/donate/page": "/donate",
+  "/page": "/",
+  "/partner/page": "/partner",
+  "/volunteer/page": "/volunteer"
+}
