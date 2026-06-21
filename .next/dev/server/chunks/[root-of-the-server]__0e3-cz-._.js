@@ -187,7 +187,7 @@ async function POST(req) {
         const mailOptions = {
             from: process.env.SMTP_FROM || // process.env.SMTP_USER ||
             '"Expertise Hub Website" <no-reply@localhost>',
-            to: "mmdmuazu@gmail.com",
+            to: "expertisehub1@gmail.com",
             subject: `New message from ${name}`,
             html
         };
