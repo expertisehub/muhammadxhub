@@ -1,4 +1,8 @@
 import nodemailer from "nodemailer";
+<<<<<<< HEAD
+=======
+import { appendSubmission } from "../../../lib/admin-store.js";
+>>>>>>> e15cd74 (Admin commit)
 
 export async function POST(req) {
   try {
@@ -12,9 +16,41 @@ export async function POST(req) {
       );
     }
 
+<<<<<<< HEAD
     // Build email body
     const html = `
       <h2>New ${type || "contact"} submission</h2>
+=======
+    const category =
+      type === "volunteer"
+        ? "Volunteer"
+        : type === "partner"
+          ? "Partner"
+          : type === "donate"
+            ? "Donate"
+            : "Contact inquiry";
+
+    await appendSubmission({
+      type: type || "contact",
+      category,
+      name,
+      email,
+      subject: subject || "No subject",
+      message,
+      extra: extra || {},
+      history: [
+        {
+          status: "Pending",
+          note: "Submission received from public form",
+          at: new Date().toISOString(),
+        },
+      ],
+    });
+
+    // Build email body
+    const html = `
+      <h2>New ${category} submission</h2>
+>>>>>>> e15cd74 (Admin commit)
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
       ${subject ? `<p><strong>Subject:</strong> ${subject}</p>` : ""}

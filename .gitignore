@@ -3,6 +3,11 @@ dist
 dist-ssr
 *.local
 .vite
+<<<<<<< HEAD
+=======
+.next
+
+>>>>>>> e15cd74 (Admin commit)
 .DS_Store
 .env
 .env.local
